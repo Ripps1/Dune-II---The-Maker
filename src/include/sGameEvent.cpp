@@ -54,7 +54,7 @@ const char *s_GameEvent::toString(const eGameEventType &eventType)
         case eGameEventType::GAME_EVENT_CREATE_UNIT:
             return "GAME_EVENT_CREATE_UNIT";
         default:
-            my_assert(false && "Unknown game event type for toString()");
+            d2tm_assert(false && "Unknown game event type for toString()");
             break;
     }
     return "";
